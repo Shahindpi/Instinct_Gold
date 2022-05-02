@@ -894,9 +894,8 @@ p {
 
 .inner-tab-img {
     max-width: 225px;
-    max-height: 225px;
     margin: auto;
-     padding-bottom: 45px;
+    padding: 40px 30px;
     border-bottom: 1px solid #E1E1E1;
    /* margin: 10px;*/
 }
@@ -932,6 +931,10 @@ p {
     color: #333;
     font-family: "PetcoCircularTT-Regular", arial !important;
     font-weight: 400;
+}
+
+.tab-product-inner-item > a sup{
+    font-size: 10px;
 }
 
 .tab-product-inner-item > a > span {
