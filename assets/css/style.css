@@ -895,7 +895,7 @@ p {
 .inner-tab-img {
     max-width: 225px;
     margin: auto;
-    padding: 40px 30px;
+    padding: 40px;
     border-bottom: 1px solid #E1E1E1;
    /* margin: 10px;*/
 }
