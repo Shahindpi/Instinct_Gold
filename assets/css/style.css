@@ -715,7 +715,7 @@ p {
 .find-food-area {
     padding-top: 55px;
     overflow: hidden;
-    padding-bottom: 67px;
+    /* padding-bottom: 67px; */
 }
 .cat-dog-banner{
     display: -webkit-box;
@@ -796,11 +796,19 @@ p {
     font-family: "PetcoCircularTT-Bold", arial !important;
     font-weight: bold;
 }
+.tab__list_top_btn .tab__item a{
+    color: #00205B !important;
+    display: block;
+}
 
 .tab__list_top_btn .tab__item.is--active {
     position: relative;
     background: #00205B;
     color: #fff;
+}
+.tab__list_top_btn .tab__item.is--active a{
+    color: #fff !important;
+    display: block;
 }
 
 .tab__item {
