@@ -400,6 +400,56 @@ p {
     margin-bottom: 0px;
 }
 
+.banner-area .slick-dots li.slick-active button:before {
+    opacity: 1;
+    background: #09205c;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: 0.5s ease-in;
+}
+
+.banner-area .slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    content: '•';
+    text-align: center;
+    opacity: 0;
+    border-radius: 50%;
+    background: #09205c;
+    transition: 0.5s ease-in;
+}
+
+.banner-area .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    outline: 0;
+    background: transparent;
+    border: 2px solid #09205c;
+    border-radius: 50%;
+}
+
+.banner-area .slick-dots {
+    bottom: 0;
+    width: 90px;
+    list-style: none;
+    text-align: center;
+    left: 45%;
+    background: rgba(255, 255, 255, 0.90);
+    padding: 4px;
+    height: 36px;
+    border-radius: 5px 5px 0 0;
+}
+
 /**************************************/
 /************ benefits  Area*************/
 /************************************/
@@ -1069,6 +1119,11 @@ p {
 }
 
 @media all and (max-width:767px){
+
+    .banner-area .slick-dots {
+        left: 38%;
+    }
+
     .common-heading > p {
         width: 100%;
     }
