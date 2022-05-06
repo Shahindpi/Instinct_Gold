@@ -1,9 +1,27 @@
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 4 version
-*/
+ * Legal Disclaimer
+ *
+ * These web fonts are licensed exclusively for use on the following:
+ * All domains belonging to Petco
+ *
+ * It is strictly forbidden to download or use these fonts on any other website domain or media.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2020
+ */
+
+
+ @font-face {
+	font-family: PetcoCircularTT-Regular;
+	src: url(assets/fonts/PetcoCircularTT-Regular.woff2) format("woff2"), url(Assets/fonts/PetcoCircularTT-Regular.woff) format("woff")
+}
+
+@font-face {
+	font-family: PetcoCircularTT-Bold;
+	src: url(assets/fonts/PetcoCircularTT-Bold.woff2) format("woff2"), url(Assets/fonts/PetcoCircularTT-Bold.woff) format("woff")
+}
 
 /*Default css*/
 body {
