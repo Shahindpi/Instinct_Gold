@@ -461,7 +461,7 @@ p {
     width: 90px;
     list-style: none;
     text-align: center;
-    left: 45%;
+    left: calc(100%/2 - 45px);
     background: rgba(255, 255, 255, 0.90);
     padding: 4px;
     height: 36px;
