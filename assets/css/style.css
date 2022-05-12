@@ -23,6 +23,7 @@
 	src: url(assets/fonts/PetcoCircularTT-Bold.woff2) format("woff2"), url(Assets/fonts/PetcoCircularTT-Bold.woff) format("woff")
 }
 
+
 /*Default css*/
 body {
     margin: 0;
@@ -253,7 +254,10 @@ a:hover {
     overflow: hidden !important;
 }
 
-/* Slider and Carousels  */
+/**************************************/
+/************ Splide  Css*************/
+/************************************/
+
 .splide__container {
     box-sizing: border-box;
     position: relative;
@@ -530,6 +534,9 @@ a:hover {
 }
 
 
+.splide_banner .splide__arrows {
+    display: none;
+}
 
 /**************************************/
 /************ Header  Area*************/
@@ -544,50 +551,6 @@ a:hover {
 .slider-banner-img > img {
     width: 100%;
     height: auto;
-}
-
-.banner-area .splide__pagination {
-    width: 90px;
-    list-style: none;
-    text-align: center;
-    left: calc(100%/2 - 45px);
-    background: rgba(255, 255, 255, 0.90);
-    padding: 4px;
-    height: 36px;
-    border-radius: 5px 5px 0 0;
-    bottom: -1px;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-}
-
-.banner-area .splide__pagination__page {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 15px;
-    height: 15px;
-    padding: 5px;
-    cursor: pointer;
-    color: transparent;
-    outline: 0;
-    background: transparent;
-    border: 2px solid #09205c;
-    border-radius: 50%;
-}
-
-.banner-area .splide__pagination__page.is-active {
-    opacity: 1;
-    background: #09205c;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    transition: 0.5s ease-in;
-    transform: scale(1);
-}
-
-.banner-area .splide__arrows{
-    display: none;
 }
 
 
@@ -707,41 +670,25 @@ p {
     -o-transition: 0.6s;
     transition: 0.6s;
 }
-.slider-single-item.slider-single-item2 .common-slider-btn > a:hover{
-    background: #001952;
-    color: #fff;
-    -webkit-transition: 0.6s;
-    -o-transition: 0.6s;
-    transition: 0.6s;
-}
-.banner-area .slick-slider {
-    margin-bottom: 0px;
-}
 
-.banner-area .slick-dots li.slick-active button:before {
-    opacity: 1;
-    background: #09205c;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    transition: 0.5s ease-in;
-}
 
-.banner-area .slick-dots li button:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    content: '•';
+
+.banner-area .splide__pagination {
+    width: 90px;
+    list-style: none;
     text-align: center;
-    opacity: 0;
-    border-radius: 50%;
-    background: #09205c;
-    transition: 0.5s ease-in;
+    left: calc(100%/2 - 45px);
+    background: rgba(255, 255, 255, 0.90);
+    padding: 4px;
+    height: 36px;
+    border-radius: 5px 5px 0 0;
+    bottom: -1px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
 }
 
-.banner-area .slick-dots li button {
+.banner-area .splide__pagination__page {
     font-size: 0;
     line-height: 0;
     display: block;
@@ -756,17 +703,61 @@ p {
     border-radius: 50%;
 }
 
-.banner-area .slick-dots {
-    bottom: 0;
-    width: 90px;
-    list-style: none;
-    text-align: center;
-    left: calc(100%/2 - 45px);
-    background: rgba(255, 255, 255, 0.90);
-    padding: 4px;
-    height: 36px;
-    border-radius: 5px 5px 0 0;
+.banner-area .splide__pagination__page.is-active {
+    opacity: 1;
+    background: #09205c;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: 0.5s ease-in;
+    transform: scale(1);
 }
+
+.banner-area .splide__arrows{
+    display: none;
+}
+
+.tba-productxx .splide__arrows {
+    display: none;
+}
+.tba-product .splide__pagination {
+    display: none;
+}
+
+.tba-product .splide__arrow {
+    -ms-flex-align: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #122359;
+    border-radius: 50%;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3.2em;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 1;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3.2em;
+    z-index: 1;
+}
+
+.tba-product .splide__arrow--next {
+    right: -30px;
+}
+
+.tba-product .splide__arrow svg {
+    fill: #122359;
+    height: 3.2em;
+    width: 1.2em;
+}
+.tba-product .splide__arrow--prev {
+    left: -30px;
+}
+
 
 /**************************************/
 /************ benefits  Area*************/
@@ -1507,11 +1498,40 @@ p {
     .tba-product .pro-next.slick-arrow {
         display: none !important;
     }
+    .tba-product .splide__arrows {
+        display: none;
+    }
 
 }
 
 
 @media all and (max-width: 575px) {
+    .range-main-single {
+    -webkit-box-flex: 0; 
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; 
+     margin-bottom: 30px; 
+}
+.range-main-content-flexx .splide__pagination {
+    display: none;
+}
+.range-main-content-flexx .splide__arrow.splide__arrow--prev {
+    display: none;
+}
+
+.range-main-content-flexx .splide__arrow {
+    background: transparent;
+    opacity: 1;
+    color: #041C54;
+}
+
+.range-main-content-flexx .splide__arrow svg {
+    fill: #041C54;
+    height: 60px;
+    width: 60px;
+}
+
+
     .banner-slider-img > img {
         max-width: 242px;
     }
